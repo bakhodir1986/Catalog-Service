@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Catalog Persistence Service\Catalog Persistence Service.csproj" />
+  </ItemGroup>
+
 </Project>
