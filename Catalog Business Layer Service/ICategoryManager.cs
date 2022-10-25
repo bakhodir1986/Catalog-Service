@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Catalog_Business_Layer_Service
 {
-    internal class ICategoryManager
+    public interface ICategoryManager
     {
     }
 }

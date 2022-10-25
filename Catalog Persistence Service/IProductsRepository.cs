@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Catalog_Persistence_Service
 {
-    internal class IProductsRepository
+    public interface IProductsRepository
     {
     }
 }

@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Catalog_Persistence_Service
 {
-    internal class ICategoryRepository
+    public interface ICategoryRepository
     {
+        IEnumerable<Category> GetCategories();
+
+
     }
 }
