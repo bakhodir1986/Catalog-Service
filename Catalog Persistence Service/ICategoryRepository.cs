@@ -10,6 +10,10 @@ namespace Catalog_Persistence_Service
     {
         IEnumerable<Category> GetCategories();
 
+        void AddCategory(Category category);
 
+        void UpdateCategory(Category category);
+
+        void DeleteCategory(Category category);
     }
 }
