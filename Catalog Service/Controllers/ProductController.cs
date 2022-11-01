@@ -1,5 +1,5 @@
 ﻿using Catalog_Business_Layer_Service;
-using Catalog_Persistence_Service;
+using Catalog_Business_Layer_Service.Products;
 using Microsoft.AspNetCore.Mvc;
 using System.Xml.Linq;
 
@@ -7,9 +7,9 @@ namespace Catalog_Service.Controllers
 {
     public class ProductController
     {
-        private readonly IProductManager productManager;
+        private readonly IProductMService productManager;
 
-        public ProductController(IProductManager productManager)
+        public ProductController(IProductMService productManager)
         {
             this.productManager = productManager;
         }

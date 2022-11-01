@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Catalog Business Layer Service\Catalog Business Layer Service.csproj" />
+    <ProjectReference Include="..\Catalog Persistence Service\Catalog Persistence Service.csproj" />
   </ItemGroup>
 
 </Project>

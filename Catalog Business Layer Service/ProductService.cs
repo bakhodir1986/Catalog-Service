@@ -1,4 +1,4 @@
-﻿using Catalog_Persistence_Service;
+﻿using Catalog_Business_Layer_Service.Products;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Catalog_Business_Layer_Service
 {
-    public class ProductManager : IProductManager
+    public class ProductService : IProductMService
     {
         private readonly IProductsRepository productsRepository;
 
-        public ProductManager(IProductsRepository productsRepository)
+        public ProductService(IProductsRepository productsRepository)
         {
             this.productsRepository = productsRepository;
         }

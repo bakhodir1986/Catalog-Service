@@ -1,14 +1,14 @@
 ﻿using Catalog_Business_Layer_Service;
-using Catalog_Persistence_Service;
+using Catalog_Business_Layer_Service.Categories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Catalog_Service.Controllers
 {
     public class CategoryController
     {
-        private readonly ICategoryManager categoryManager;
+        private readonly ICategoryService categoryManager;
 
-        public CategoryController(ICategoryManager categoryManager)
+        public CategoryController(ICategoryService categoryManager)
         {
             this.categoryManager = categoryManager;
         }

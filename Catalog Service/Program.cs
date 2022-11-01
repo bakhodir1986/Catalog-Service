@@ -1,4 +1,6 @@
 using Catalog_Business_Layer_Service;
+using Catalog_Business_Layer_Service.Categories;
+using Catalog_Business_Layer_Service.Products;
 using Catalog_Persistence_Service;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,8 +11,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddTransient<ICategoryManager, CategoryManager>();
-builder.Services.AddTransient<IProductManager, ProductManager>();
+builder.Services.AddTransient<ICategoryService, CategoryService>();
+builder.Services.AddTransient<IProductMService, ProductService>();
 builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
 builder.Services.AddTransient<IProductsRepository, ProductsRepository>();
 

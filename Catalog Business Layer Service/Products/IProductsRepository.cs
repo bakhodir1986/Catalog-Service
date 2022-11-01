@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Catalog_Persistence_Service
+namespace Catalog_Business_Layer_Service.Products
 {
     public interface IProductsRepository
     {

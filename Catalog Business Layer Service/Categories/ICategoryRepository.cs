@@ -1,13 +1,12 @@
-﻿using Catalog_Persistence_Service;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Catalog_Business_Layer_Service
+namespace Catalog_Business_Layer_Service.Categories
 {
-    public interface ICategoryManager
+    public interface ICategoryRepository
     {
         IEnumerable<Category> GetCategories();
 

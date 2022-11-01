@@ -1,4 +1,4 @@
-﻿using Catalog_Persistence_Service;
+﻿using Catalog_Business_Layer_Service.Categories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Catalog_Business_Layer_Service
 {
-    public class CategoryManager : ICategoryManager
+    public class CategoryService : ICategoryService
     {
         private readonly ICategoryRepository categoryRepository;
 
-        public CategoryManager(ICategoryRepository categoryRepository)
+        public CategoryService(ICategoryRepository categoryRepository)
         {
             this.categoryRepository = categoryRepository;
         }

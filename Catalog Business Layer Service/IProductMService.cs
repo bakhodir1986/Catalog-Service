@@ -1,4 +1,4 @@
-﻿using Catalog_Persistence_Service;
+﻿using Catalog_Business_Layer_Service.Products;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Catalog_Business_Layer_Service
 {
-    public interface IProductManager
+    public interface IProductMService
     {
         IEnumerable<Product> GetProducts();
 
